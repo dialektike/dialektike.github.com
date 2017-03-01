@@ -32,7 +32,8 @@
 
     <ol>
       <!-- <li><a href="#filenames">File Names</a>: end in <code>.R</code></li> -->
-      <li><a href="#filenames">파일 이름</a>: 마지막에 <code>.R</code>를 넣자.</li>
+      <li><a href="#filenames">파일 이름(File Names)</a>:
+        <!-- end in <code>.R</code> -->마지막에 <code>.R</code>를 넣자.</li>
       <li><a href="#identifiers">식별자(identifiers)</a>: <code>variable.name</code>
           (or <code>variableName</code>),
           <code>FunctionName</code>, <code>kConstantName</code></li>
@@ -40,7 +41,8 @@
       <li><a href="#indentation">들여 쓰기(Indentation)</a>: <!-- two spaces, no tabs --> 탭 쓰지 말고, 2 스패이스</li>
       <li><a href="#spacing">공백 넣기(Spacing)</a></li>
       <li><a href="#curlybraces">중괄호(Curly Braces)</a>: <!-- first on same line, last on own line --> </li>
-      <li><a href="#else">else</a>: Surround else with braces </li>
+      <li><a href="#else">else</a>: <!-- Surround else with braces --> 
+        else를 괄호로 둘러싸기</li>
       <li><a href="#assignment">할당(Assignment)</a>: <!-- use <code>&lt;-</code>, not
         <code>=</code> -->
         <code>&lt;-</code>을 사용하고,
