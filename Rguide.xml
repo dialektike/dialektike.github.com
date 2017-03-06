@@ -177,10 +177,12 @@ total &lt;- sum(x[1, ])</pre>
           <p>
             BAD:
           </p>
-<pre><span style="color:red">tab.prior &lt;- table(df[df$days.from.opt&lt;0, "campaign.id"])  # Needs spaces around '&lt;'
-tab.prior &lt;- table(df[df$days.from.opt &lt; 0,"campaign.id"])  # <!-- Needs a space after the comma --> 쉼표 뒤에 공백 한 칸를 넣으세요
-tab.prior&lt;- table(df[df$days.from.opt &lt; 0, "campaign.id"])  # <!-- Needs a space after the comma --> 쉼표 뒤에 공백 한 칸를 넣으세요 &lt;-
-tab.prior&lt;-table(df[df$days.from.opt &lt; 0, "campaign.id"])  # <!-- Needs spaces around --> 주위에 공백이 필요합니다. &lt;-
+<pre><span style="color:red">tab.prior &lt;- table(df[df$days.from.opt&lt;0, "campaign.id"])  # <!--Needs spaces around '&lt;' -->
+  '&lt;'주위에 공백이 필요합니다.
+tab.prior &lt;- table(df[df$days.from.opt &lt; 0,"campaign.id"])  # <!-- Needs a space after the comma -->
+쉼표 뒤에 공백 한 칸를 넣으세요
+tab.prior&lt;- table(df[df$days.from.opt &lt; 0, "campaign.id"])  # <!-- Needs a space before &lt;- --> &lt;- 앞에 공백 한 칸를 넣으세요
+tab.prior&lt;-table(df[df$days.from.opt &lt; 0, "campaign.id"])  # <!-- Needs spaces around &lt;- --> &lt;- 주위에 공백이 필요합니다
 total &lt;- sum(x[,1])  # <!-- Needs a space after the comma --> 쉼표 뒤에 공백 한 칸를 넣으세요
 total &lt;- sum(x[ ,1])  # <!-- Needs a space after the comma, not before --> 쉼표 앞이 아니라 뒤에 공백 한 칸를 넣으세요</span>
 </pre>
