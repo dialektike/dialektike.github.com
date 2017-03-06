@@ -124,9 +124,9 @@
                 <code><span style="color:red">calculateAvgClicks</span></code>
               <!-- <br/> Make function names verbs. -->
               <br/> 함수의 이름은 동사로 만듭니다.
-              <!-- <br/><em>Exception: When creating a classed object, the function
+              <!-- <br/><em style = "font-weight: bold;">Exception: When creating a classed object, the function
                 name (constructor) and class should match  (e.g., lm).</em></li> -->
-              <br/><em>예외: 클래스된 대상(classed object)을 생성할 때에는,
+              <br/><em style = "font-weight: bold;">예외: 클래스된 대상(classed object)을 생성할 때에는,
               함수 이름(constructor)과 클래스를 맞춰야 합니다.(보기, lm).</em></li>
             <li><code>kConstantName </code></li>
           </ul>
@@ -145,10 +145,10 @@
             <!-- When indenting your code, use two spaces.  Never use tabs or mix tabs and spaces. -->
             코드를 들여 쓰기 할 때, 공백 두 개(two spaces)을 사용하십시오.
             절대로 탭이나 탭과 공백을 섞어서 사용하지 마세요.
-            <!-- <br/><em>Exception: When a line break occurs inside parentheses,
+            <!-- <br/><em style = "font-weight: bold;">Exception: When a line break occurs inside parentheses,
               align the wrapped line with the first character inside the
               parenthesis.</em> -->
-            <br/><em>예외: 괄호 안에서 줄을 바꿀 때,
+            <br/><em style = "font-weight: bold;">예외: 괄호 안에서 줄을 바꿀 때,
             줄 바꿈된 행(line)을 괄호 안의 첫 번째 문자와 맞춥니다.</em>
           </p>
 
@@ -156,12 +156,12 @@
           <p>
             <!-- Place spaces around all binary operators (<code>=</code>,
             <code>+</code>, <code>-</code>, <code>&lt;-</code>, etc.).
-            <br/><em> Exception:  Spaces around <code>=</code>'s are
+            <br/><em style = "font-weight: bold;"> Exception:  Spaces around <code>=</code>'s are
             optional when passing parameters in a function call.</em> -->
             모든 이진 연산자 (<code>=</code>,
             <code>+</code>, <code>-</code>, <code>&lt;-</code>, 등)
             앞뒤에 공백을 넣으십시오.
-            <br/><em> 예외 :
+            <br/><em style = "font-weight: bold;"> 예외 :
             함수 호출에서 매개 변수(parameters)를 전달할 때
             <code>=</code> 앞뒤에 공백을 넣는 것은 선택 사항입니다.</em>
           </p>
@@ -213,8 +213,8 @@ total &lt;- sum(x[ ,1])  # <!-- Needs a space after the comma, not before --> �
           <p>
             <!-- Do not place spaces around code in parentheses or square brackets. -->
             괄호 나 대괄호 안에 코드 주위에는 공백을 넣지 마십시오.
-            <!-- <br/><em> Exception:  Always place a space after a comma.</em> -->
-            <br/><em> 예외 : 항상 쉼표 뒤에 공백을 넣으십시오.</em>
+            <!-- <br/><em style = "font-weight: bold;"> Exception:  Always place a space after a comma.</em> -->
+            <br/><em style = "font-weight: bold;"> 예외 : 항상 쉼표 뒤에 공백을 넣으십시오.</em>
 
           </p>
           <p>
@@ -232,7 +232,7 @@ x[1,]  # Needs a space after the comma </span></pre>
             닫는 중괄호는 항상 자신의 줄에 있어야 합니다.
             <!--   You may omit curly
             braces when a block consists of a single statement; however, you
-            must <em>consistently</em> either use or not use curly braces for
+            must <em style = "font-weight: bold;">consistently</em> either use or not use curly braces for
             single statement blocks. -->
             블록이 단일 명령문으로 구성되어 있으면
             중괄호를 생략할 수 있습니다;
@@ -537,12 +537,12 @@ CalculateSampleCovariance &lt;- function(x, y, verbose = TRUE) {
      </p>
      <p>
      <!-- The point of having style guidelines is to have a common vocabulary of
-     coding so people can concentrate on <em>what</em> you are saying,
-     rather than on <em>how</em> you are saying it. -->
+     coding so people can concentrate on <em style = "font-weight: bold;">what</em> you are saying,
+     rather than on <em style = "font-weight: bold;">how</em> you are saying it. -->
      스타일 가이드 라인을 갖추고 있다는 점은 코딩하는데
      공통 어휘를 갖는다는 것이기에
-     사람들은 여러분들이 말하고자 하는 <em>방식</em>보다는
-     말하고 있는 <em>것</em>에 집중할 수 있게 됩니다.
+     사람들은 여러분들이 말하고자 하는 <em style = "font-weight: bold;">방식</em>보다는
+     말하고 있는 <em style = "font-weight: bold;">것</em>에 집중할 수 있게 됩니다.
      <!-- We present global style
      rules here so people
      know the vocabulary. -->
