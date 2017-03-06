@@ -3,13 +3,13 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" type="text/css" href="styleguide.css"/>
-    <title>구글이 쓴 R 스타일 가이드(Google's R Style Guide)</title>
+    <title>Google's R Style Guide</title>
   </head>
 
   <body>
 
     <!-- <h1>Google's R Style Guide</h1> -->
-    <h1>구글이 쓴 R 스타일 가이드(Google's R Style Guide)</h1>
+    <h1>구글 R 스타일 가이드(Google's R Style Guide)</h1>
 
 
     <!-- <p>
@@ -32,17 +32,15 @@
 
     <ol>
       <!-- <li><a href="#filenames">File Names</a>: end in <code>.R</code></li> -->
-      <li><a href="#filenames">파일 이름(File Names)</a>:
-        <!-- end in <code>.R</code> -->마지막에 <code>.R</code>를 넣자.</li>
+      <li><a href="#filenames">파일 이름</a>: 마지막에 <code>.R</code>를 넣자.</li>
       <li><a href="#identifiers">식별자(identifiers)</a>: <code>variable.name</code>
           (or <code>variableName</code>),
           <code>FunctionName</code>, <code>kConstantName</code></li>
       <li><a href="#linelength">줄 길이(Line Length)</a>: <!-- maximum 80 characters --> 최대 80 글자</li>
-      <li><a href="#indentation">들여 쓰기(Indentation)</a>: <!-- two spaces, no tabs --> 탭 쓰지 말고, 2 스패이스</li>
+      <li><a href="#indentation">들여 쓰기(Indentation)</a>: <!-- two spaces, no tabs --> 탭 쓰지 말고, 2 스페이스</li>
       <li><a href="#spacing">공백 넣기(Spacing)</a></li>
       <li><a href="#curlybraces">중괄호(Curly Braces)</a>: <!-- first on same line, last on own line --> </li>
-      <li><a href="#else">else</a>: <!-- Surround else with braces --> 
-        else를 괄호로 둘러싸기</li>
+      <li><a href="#else">else</a>: Surround else with braces </li>
       <li><a href="#assignment">할당(Assignment)</a>: <!-- use <code>&lt;-</code>, not
         <code>=</code> -->
         <code>&lt;-</code>을 사용하고,
@@ -65,7 +63,7 @@
     <ol>
       <li><a href="#attach"> <code>attach</code></a>: <!-- avoid using it --> 이것을 사용하지 마세요.</li>
       <li><a href="#functionlanguage"> Functions</a>:
-        <!-- errors should be raised using <code>stop()</code></li> --> <code>stop()</code>을 사용할 때에는 애러가 발생하게 해야 합니다.</li>
+        <!-- errors should be raised using <code>stop()</code></li> --> <code>stop()</code>을 사용할 때에는 에러가 발생하게 해야 합니다.</li>
       <li><a href="#object"> Objects and Methods</a>: <!-- avoid S4 objects and
         methods when possible; never mix S3 and S4 -->
         가능한 한 S4 객체와 메소드는 피하세요; 절대로 S3와 S4를 섞지 마세요</li>
@@ -82,7 +80,7 @@
           </p> -->
           <p>
             파일 이름은 <code>.R</code>으로 끝나야 하고,
-            그리고, 물론, 의미가 있어야 한다.
+            의미가 있어야 한다.
             <br/> GOOD: <code>predict_ad_revenue.R</code>
             <br/> BAD: <code><span style="color:red">foo.R</span></code>
           </p>
@@ -106,7 +104,7 @@
             식별자는 다음 규칙에 따라 이름을 붙여야 합니다.
             변수(variable) 이름으로 선호되는 형식은 모두 소문자이고
             점으로 구분된 단어 (<code>variable.name</code>) 이지만, <code>variableName</code> 도 허용합니다;
-            함수 이름 맨 앞글자는 대문자로 하고 점 없이 (<code>FunctionName</code>) 과 같이 정합니다;
+            함수 이름 맨 앞글자는 대문자로 하고 점이 없이 (<code>FunctionName</code>) 과 같이 정합니다;
             상수(constants)에는 함수처럼 이름을 붙이지만
             맨 앞에 <code>k</code>라는 이니셜을 붙입니다.
           </p>
@@ -126,9 +124,9 @@
                 <code><span style="color:red">calculateAvgClicks</span></code>
               <!-- <br/> Make function names verbs. -->
               <br/> 함수의 이름은 동사로 만듭니다.
-              <!-- <br/><em style = "font-weight: bold;">Exception: When creating a classed object, the function
+              <!-- <br/><em>Exception: When creating a classed object, the function
                 name (constructor) and class should match  (e.g., lm).</em></li> -->
-              <br/><em style = "font-weight: bold;">예외: 클래스된 대상(classed object)을 생성할 때에는,
+              <br/><em>예외: 클래스된 대상(classed object)을 생성할 때에는,
               함수 이름(constructor)과 클래스를 맞춰야 합니다.(보기, lm).</em></li>
             <li><code>kConstantName </code></li>
           </ul>
@@ -147,10 +145,10 @@
             <!-- When indenting your code, use two spaces.  Never use tabs or mix tabs and spaces. -->
             코드를 들여 쓰기 할 때, 공백 두 개(two spaces)을 사용하십시오.
             절대로 탭이나 탭과 공백을 섞어서 사용하지 마세요.
-            <!-- <br/><em style = "font-weight: bold;">Exception: When a line break occurs inside parentheses,
+            <!-- <br/><em>Exception: When a line break occurs inside parentheses,
               align the wrapped line with the first character inside the
               parenthesis.</em> -->
-            <br/><em style = "font-weight: bold;">예외: 괄호 안에서 줄을 바꿀 때,
+            <br/><em>예외: 괄호 안에서 줄을 바꿀 때,
             줄 바꿈된 행(line)을 괄호 안의 첫 번째 문자와 맞춥니다.</em>
           </p>
 
@@ -158,19 +156,19 @@
           <p>
             <!-- Place spaces around all binary operators (<code>=</code>,
             <code>+</code>, <code>-</code>, <code>&lt;-</code>, etc.).
-            <br/><em style = "font-weight: bold;"> Exception:  Spaces around <code>=</code>'s are
+            <br/><em> Exception:  Spaces around <code>=</code>'s are
             optional when passing parameters in a function call.</em> -->
             모든 이진 연산자 (<code>=</code>,
             <code>+</code>, <code>-</code>, <code>&lt;-</code>, 등)
             앞뒤에 공백을 넣으십시오.
-            <br/><em style = "font-weight: bold;"> 예외 :
+            <br/><em> 예외 :
             함수 호출에서 매개 변수(parameters)를 전달할 때
             <code>=</code> 앞뒤에 공백을 넣는 것은 선택 사항입니다.</em>
           </p>
           <p>
             <!-- Do not place a space before a comma, but always place one after a
             comma. -->
-            쉼표 앞에 공백을 두지 말고, 항상 쉼표 뒤에 공백을 넣으십시오.
+            쉼표 앞에 공백을 두지 말고, 항상 쉼표 뒤에 공백 한 칸을 넣으십시오.
             <br/><br/> GOOD:
           </p>
 <pre>tab.prior &lt;- table(df[df$days.from.opt &lt; 0, "campaign.id"])
@@ -180,11 +178,11 @@ total &lt;- sum(x[1, ])</pre>
             BAD:
           </p>
 <pre><span style="color:red">tab.prior &lt;- table(df[df$days.from.opt&lt;0, "campaign.id"])  # Needs spaces around '&lt;'
-tab.prior &lt;- table(df[df$days.from.opt &lt; 0,"campaign.id"])  # Needs a space after the comma
-tab.prior&lt;- table(df[df$days.from.opt &lt; 0, "campaign.id"])  # Needs a space before &lt;-
-tab.prior&lt;-table(df[df$days.from.opt &lt; 0, "campaign.id"])  # Needs spaces around &lt;-
-total &lt;- sum(x[,1])  # Needs a space after the comma
-total &lt;- sum(x[ ,1])  # Needs a space after the comma, not before</span>
+tab.prior &lt;- table(df[df$days.from.opt &lt; 0,"campaign.id"])  # <!-- Needs a space after the comma --> 쉼표 뒤에 공백 한 칸를 넣으세요
+tab.prior&lt;- table(df[df$days.from.opt &lt; 0, "campaign.id"])  # <!-- Needs a space after the comma --> 쉼표 뒤에 공백 한 칸를 넣으세요 &lt;-
+tab.prior&lt;-table(df[df$days.from.opt &lt; 0, "campaign.id"])  # <!-- Needs spaces around --> 주위에 공백이 필요합니다. &lt;-
+total &lt;- sum(x[,1])  # <!-- Needs a space after the comma --> 쉼표 뒤에 공백 한 칸를 넣으세요
+total &lt;- sum(x[ ,1])  # <!-- Needs a space after the comma, not before --> 쉼표 앞이 아니라 뒤에 공백 한 칸를 넣으세요</span>
 </pre>
           <p>
             <!-- Place a space before left parenthesis, except in a function call. -->
@@ -215,8 +213,8 @@ total &lt;- sum(x[ ,1])  # Needs a space after the comma, not before</span>
           <p>
             <!-- Do not place spaces around code in parentheses or square brackets. -->
             괄호 나 대괄호 안에 코드 주위에는 공백을 넣지 마십시오.
-            <!-- <br/><em style = "font-weight: bold;"> Exception:  Always place a space after a comma.</em> -->
-            <br/><em style = "font-weight: bold;"> 예외 : 항상 쉼표 뒤에 공백을 넣으십시오.</em>
+            <!-- <br/><em> Exception:  Always place a space after a comma.</em> -->
+            <br/><em> 예외 : 항상 쉼표 뒤에 공백을 넣으십시오.</em>
 
           </p>
           <p>
@@ -231,10 +229,10 @@ x[1,]  # Needs a space after the comma </span></pre>
             <!-- An opening curly brace should never go on its own line; a closing
             curly brace should always go on its own line. -->
             여는 중괄호는 절대로 그 자체의 줄을 따라 가면 안됩니다;
-            닫는 중괄호는 항상 자신의 줄에 있어야합니다.
+            닫는 중괄호는 항상 자신의 줄에 있어야 합니다.
             <!--   You may omit curly
             braces when a block consists of a single statement; however, you
-            must <em style = "font-weight: bold;">consistently</em> either use or not use curly braces for
+            must <em>consistently</em> either use or not use curly braces for
             single statement blocks. -->
             블록이 단일 명령문으로 구성되어 있으면
             중괄호를 생략할 수 있습니다;
@@ -392,12 +390,12 @@ hist(df$pct.spent,
 </span></pre>
           <p> Ideally, unit tests should serve as sample function calls (for
             shared library routines). 이상적으로, 단위 테스트는
-            샘플 함수 호출로 사용되어야합니다(공유된 라이브러러 루틴을 위해서)
+            샘플 함수 호출로 사용되어야 합니다(공유된 라이브러러 루틴을 위해서)
           </p>
         <h4 id="functiondocumentation">함수 문서화(Function Documentation)</h4>
           <p> <!-- Functions should contain a comments section immediately below
             the function definition line. -->
-            함수는 함수를 정의한 줄 바로 아래의 주석 섹션을 가져해야 합니다.
+            함수는 함수를 정의한 줄 바로 아래의 주석 섹션을 가져와야 합니다.
              <!-- These comments should consist of a
             one-sentence description of the function; -->
             이런 주석은 그 함수를 한 문장으로 기술하는 것으로 구성되어야 합니다.
@@ -459,11 +457,11 @@ CalculateSampleCovariance &lt;- function(x, y, verbose = TRUE) {
         <h4 id="attach">Attach</h4>
         <p> <!-- The possibilities for creating errors when using
           <code>attach</code> are numerous. Avoid it. -->
-          <code>attach</code>를 사용할 때 에러(errors)를 생성하게 될 가능성은
-          수도 없습니다. 이것을 피하세요.</p>
+          <code>attach</code>를 사용할 때 에러(errors)를 생성하게 될 가능성이
+          많습니다. 조심하세요.</p>
         <h4 id="functionlanguage">Functions</h4>
         <p> <!-- Errors should be raised using <code>stop()</code>. -->
-         <code>stop()</code>을 사용할 때에는 애러가 발생하게 해야 합니다.</p>
+         <code>stop()</code>을 사용할 때에는 에러가 발생하게 해야 합니다.</p>
         <h4 id="object">Objects and Methods</h4>
           <p> <!-- The S language has two object systems, S3 and S4, both of which
           are available in R.  S3 methods are more interactive and flexible,
@@ -507,7 +505,7 @@ CalculateSampleCovariance &lt;- function(x, y, verbose = TRUE) {
 <p>
   <!-- The coding conventions described above should be followed, unless
   there is good reason to do otherwise. -->
-  다르게 할 좋은 이유가  이유가 없는 한 위에서
+  다르게 할 좋은 이유가 없는 한, 위에서
    설명한 코딩 관습(conventions)을 따라야 합니다.
    <!-- Exceptions include legacy
   code and modifying third-party code. -->
@@ -530,44 +528,44 @@ CalculateSampleCovariance &lt;- function(x, y, verbose = TRUE) {
      <code>if </code>
      clauses, you should, too. -->
      만약 다른 사람들이 <code>if </code> 문 앞뒤에 공백을 사용한다면,
-     역시 여러분들도 그렇게 해야합니다.
+     역시 여러분들도 그렇게 해야 합니다.
      <!-- If their comments have little boxes of stars
      around them, make your comments have little boxes of stars around them,
      too. -->
      만약 그들의 주석 둘레를 별표로 만든 작은 상자로 둘러싸여 있다면,
-     여러분의 주석도 별표로 만든 작은 상자로 둘러있게 만들어야 합니다.
+     여러분의 주석도 별표로 만든 작은 상자로 둘러지도록 만들어야 합니다.
      </p>
      <p>
      <!-- The point of having style guidelines is to have a common vocabulary of
-     coding so people can concentrate on <em style = "font-weight: bold;">what</em> you are saying,
-     rather than on <em style = "font-weight: bold;">how</em> you are saying it. -->
+     coding so people can concentrate on <em>what</em> you are saying,
+     rather than on <em>how</em> you are saying it. -->
      스타일 가이드 라인을 갖추고 있다는 점은 코딩하는데
      공통 어휘를 갖는다는 것이기에
-     사람들은 여러분들이 말하고자 하는 <em style = "font-weight: bold;">방식</em>보다는
-     말하고 있는 <em style = "font-weight: bold;">것</em>에 집중할 수 있게 됩니다.
+     사람들은 여러분들이 말하고자 하는 <em>방식</em>보다는
+     말하고 있는 <em>것</em>에 집중할 수 있게 됩니다.
      <!-- We present global style
      rules here so people
      know the vocabulary. -->
      우리는 사람들이 그 어휘를 알 수 있도록
      여기에 전반적인(global) 스타일 규칙을 제시합니다.
      <!-- But local style is also important. -->
-     그러나 지협적인(local) 스타일 역시 중요합니다.
+     그러나 특정한(local) 스타일 역시 중요합니다.
      <!-- If code you add
      to a file looks drastically different from the existing code around it,
      the discontinuity will throw readers out of their rhythm when they go to
      read it. -->
      만약 여러분이 파일에 추가하는 코드가 기존 코드와 크게 다르다면,
-     그런 불연속은 (코드를) 읽는 이가 그들이 쭉 읽어갈 때
-     그들의 리듬에서 벗어나게 합니다.
+     그런 불연속은 (코드를) 보는 사람들의
+     리듬을 어긋나게 합니다.
      <!-- Try to avoid this. -->
-     이것이 피하도록 노력하세요.
+     이러한 일이 없도록 신경써주세요.
      </p>
 
      <p>
      <!-- OK, enough writing about writing code; the code itself is much more
      interesting. Have fun! -->
-     OK, 코드를 쓰는데에 대한 글쓰기는 이것으로 충분합니다;
-     코드 자쳬가 매우 더 흥미롭습니다. 즐기세요!
+     OK, 코드를 쓰는 법에 대해선 이 정도로 충분합니다;
+     코드 자체가 더 흥미로운 법이지요. 수고하세요!
      </p>
 
 
